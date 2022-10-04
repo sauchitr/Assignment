@@ -19,16 +19,13 @@ class Convert:
 
     def extract_file(self):
         """
-        Extracting the xml file from 1.zip
+        Will extract the xml file from 1.zip
         """
         with ZipFile(self.filename, "r") as z:
             z.extractall(os.curdir)
             logging.info(".xml file extracted")
 
     def convert_file(self):
-      """
-      Converting the xml file to the csv file.
-      """
 
         # Finding the file to be converted to csv
         filepath = None
