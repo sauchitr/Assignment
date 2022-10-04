@@ -16,3 +16,6 @@ Convert xml to csv
     python3 Convert.py
 4. Execute the test_Convert.py file as:
     python -m unittest test_Convert.py
+    
+# AWS S3 link to download the file
+https://steeleyeassignment1.s3.ap-south-1.amazonaws.com/output.csv
