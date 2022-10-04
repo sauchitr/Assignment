@@ -22,7 +22,7 @@ class Convert:
         Will extract the xml file from 1.zip
         """
         with ZipFile(self.filename, "r") as z:
-            z.extractall()
+            z.extractall(os.curdir)
             logging.info(".xml file extracted")
 
     def convert_file(self):
@@ -90,4 +90,5 @@ class Convert:
 
 if __name__ == '__main__':
     p = Convert(filename="1.zip")
+    p.extract_file()
     p.convert_file()
